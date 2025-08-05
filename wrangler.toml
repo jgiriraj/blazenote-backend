@@ -19,3 +19,13 @@ compatibility_flags = [ "nodejs_compat" ]
 
 [observability.logs]
 enabled = true
+
+[[routes]]
+pattern = "blazenote-backend.balanced-keystone.sxplab.com"
+custom_domain = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "blazenote"
+database_id = "681c637e-28f0-44b9-ba47-86b093f99258"
+migrations_dir = "./migrations"
